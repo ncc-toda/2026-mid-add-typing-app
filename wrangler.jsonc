@@ -12,7 +12,7 @@
     {
       "binding": "DB",
       "database_name": "2026-mid-add-typing-app-db",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "64f0d54b-b1b7-40a6-bf88-d5bdca2e3bf1",
       "migrations_dir": "./migrations",
     },
   ],
