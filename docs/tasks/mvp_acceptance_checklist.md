@@ -41,4 +41,4 @@
 - [x] ローカル D1 と本番 D1 が分かれている
 - [x] `just dev` / `just check` / `just deploy` / `just db-migrate` がある
 - [x] `just check` で lint、typecheck、test、build が走る
-- [ ] Cloudflare Workers にデプロイされ、本番で一通りプレイできる
+- [x] Cloudflare Workers にデプロイされ、本番で一通りプレイできる
