@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pattern A · 統計</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="mnav">
+    <span>A Workspace</span>
+    <span class="sep">/</span>
+    <a href="title.html">タイトル</a>
+    <a href="difficulty.html">難易度</a>
+    <a href="play.html">プレイ</a>
+    <a href="result.html">結果</a>
+    <a class="is-current" href="stats.html">統計</a>
+    <a class="hub" href="../index.html">比較ハブ</a>
+  </nav>
+
+  <div class="screen">
+    <div class="panel">
+      <h1 style="margin:0;font-size:26px;">タイピング統計</h1>
+      <p class="tag">累計 12 プレイ · 高度な推移グラフは MVP 対象外</p>
+
+      <h2 class="sec" style="margin-top:24px">苦手な指</h2>
+      <div class="fingers">
+        <div class="finger">左小指<br />2.1%</div>
+        <div class="finger">左薬指<br />3.4%</div>
+        <div class="finger">左中指<br />4.0%</div>
+        <div class="finger bad">左人差<br />11.2%</div>
+        <div class="finger">右人差<br />5.8%</div>
+        <div class="finger">右中指<br />4.4%</div>
+        <div class="finger bad">右薬指<br />9.6%</div>
+        <div class="finger">右小指<br />6.1%</div>
+        <div class="finger">親指<br />1.2%</div>
+      </div>
+
+      <div class="cols">
+        <div>
+          <h2 class="sec">苦手キー</h2>
+          <table class="table">
+            <thead><tr><th>キー</th><th>入力</th><th>ミス</th><th>ミス率</th></tr></thead>
+            <tbody>
+              <tr><td><code>y</code></td><td>86</td><td>14</td><td>16.3%<div class="bar"><span style="width:16%"></span></div></td></tr>
+              <tr><td><code>,</code></td><td>41</td><td>6</td><td>14.6%<div class="bar"><span style="width:15%"></span></div></td></tr>
+              <tr><td><code>p</code></td><td>22</td><td>3</td><td>13.6%<div class="bar"><span style="width:14%"></span></div></td></tr>
+              <tr><td><code>@</code></td><td>18</td><td>2</td><td>11.1%<div class="bar"><span style="width:11%"></span></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h2 class="sec">苦手な動き（2キー）</h2>
+          <table class="table">
+            <thead><tr><th>遷移</th><th>回数</th><th>ミス率</th></tr></thead>
+            <tbody>
+              <tr><td><code>k → y</code></td><td>40</td><td>22.5%</td></tr>
+              <tr><td><code>Shift → 2</code> (@)</td><td>18</td><td>16.7%</td></tr>
+              <tr><td><code>l → ,</code></td><td>24</td><td>12.5%</td></tr>
+              <tr><td><code>n → n</code></td><td>31</td><td>9.7%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="title.html">タイトルへ</a>
+        <a class="btn btn-ghost" href="#">統計をリセット</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

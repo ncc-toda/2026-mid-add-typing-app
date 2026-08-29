@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UI 比較ハブ · トラブルベース打</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "M PLUS Rounded 1c", "Hiragino Sans", sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    header {
+      padding: 36px 24px 12px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 { margin: 0; font-size: 28px; }
+    .lead { color: #475569; line-height: 1.7; }
+    .grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 24px 48px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .col {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      border: 1px solid #e2e8f0;
+    }
+    .col h2 { margin: 0 0 6px; font-size: 18px; }
+    .col .kicker { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; }
+    .col p { font-size: 13px; color: #475569; line-height: 1.6; }
+    .links { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+    .links a {
+      text-decoration: none;
+      color: #4c1d95;
+      background: #f5f3ff;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 13px; font-weight: 700;
+    }
+    .a .kicker { color: #7c3aed; }
+    .b .kicker { color: #ea580c; }
+    .c .kicker { color: #e11d48; }
+    .note {
+      max-width: 1100px;
+      margin: 0 auto 40px;
+      padding: 0 24px;
+      font-size: 13px;
+      color: #64748b;
+    }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>トラブルベース打 · UI 比較</h1>
+    <p class="lead">
+      仕様は共通です。見た目の方向だけが違います。まずは各パターンの「プレイ」を見て、
+      本線にしたい案（または混ぜたい要素）を選んでください。
+    </p>
+  </header>
+  <div class="grid">
+    <article class="col a">
+      <div class="kicker">PATTERN A</div>
+      <h2>Workspace</h2>
+      <p>Slack にいちばん近い。左にチャンネル、右に年収とタイマー。業務画面の情報密度。</p>
+      <div class="links">
+        <a href="pattern-a/play.html">プレイ（推奨）</a>
+        <a href="pattern-a/title.html">タイトル</a>
+        <a href="pattern-a/difficulty.html">難易度</a>
+        <a href="pattern-a/result.html">結果</a>
+        <a href="pattern-a/stats.html">統計</a>
+      </div>
+    </article>
+    <article class="col b">
+      <div class="kicker">PATTERN B</div>
+      <h2>Arcade HUD</h2>
+      <p>年収と残り時間が巨大。入力欄がステージ。ゲームであることが一目で分かる。</p>
+      <div class="links">
+        <a href="pattern-b/play.html">プレイ（推奨）</a>
+        <a href="pattern-b/title.html">タイトル</a>
+        <a href="pattern-b/difficulty.html">難易度</a>
+        <a href="pattern-b/result.html">結果</a>
+        <a href="pattern-b/stats.html">統計</a>
+      </div>
+    </article>
+    <article class="col c">
+      <div class="kicker">PATTERN C</div>
+      <h2>Colorful DM</h2>
+      <p>サイドバーなし。吹き出しと余白。スマホでも成立しそうな単列の会話。</p>
+      <div class="links">
+        <a href="pattern-c/play.html">プレイ（推奨）</a>
+        <a href="pattern-c/title.html">タイトル</a>
+        <a href="pattern-c/difficulty.html">難易度</a>
+        <a href="pattern-c/result.html">結果</a>
+        <a href="pattern-c/stats.html">統計</a>
+      </div>
+    </article>
+  </div>
+  <p class="note">上部の黒いバーはモック切り替え用です。製品 UI ではありません。</p>
+</body>
+</html>
