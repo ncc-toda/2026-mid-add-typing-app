@@ -114,6 +114,21 @@ describe("mixed ASCII", () => {
   });
 });
 
+describe("punctuation without IME", () => {
+  it("accepts ASCII keys for fullwidth symbols and shows them in the hint", () => {
+    expect(remainingRomaji(createSessionFromReading("。"))).toBe(".");
+    expect(remainingRomaji(createSessionFromReading("…"))).toBe("...");
+    expect(feed("。", ".").finished).toBe(true);
+    expect(feed("、", ",").finished).toBe(true);
+    expect(feed("！", "!").finished).toBe(true);
+    expect(feed("（5）", "(5)").finished).toBe(true);
+    expect(feed("「あ」", "[a]").finished).toBe(true);
+    expect(feed("…", "...").finished).toBe(true);
+    expect(feed("→", "->").finished).toBe(true);
+    expect(feed("かくにんします。", "kakuninshimasu.").finished).toBe(true);
+  });
+});
+
 describe("force-correct", () => {
   it("counts a wrong key as a miss and does not advance", () => {
     const start = createSessionFromReading("か");

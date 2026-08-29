@@ -171,6 +171,19 @@ const KANA: Record<string, readonly string[]> = {
 const VOWELS = new Set(["a", "i", "u", "e", "o"]);
 const NN_NEXT = new Set(["a", "i", "u", "e", "o", "y", "n"]);
 
+const PUNCTUATION: Record<string, readonly string[]> = {
+  "。": [".", "。"],
+  "、": [",", "、"],
+  "！": ["!", "！"],
+  "？": ["?", "？"],
+  "（": ["(", "（"],
+  "）": [")", "）"],
+  "「": ["[", "「"],
+  "」": ["]", "」"],
+  "…": ["...", "…"],
+  "→": ["->", "→"],
+};
+
 function toHiragana(ch: string): string {
   const code = ch.codePointAt(0);
   if (code === undefined) return ch;
@@ -329,7 +342,7 @@ export function tokenizeReading(reading: string): RomajiToken[] {
       surface: ch,
       start: i,
       end: i + 1,
-      patterns: [ch],
+      patterns: PUNCTUATION[ch] ?? [ch],
     });
     i += 1;
   }
